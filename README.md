@@ -1,11 +1,4 @@
-<style>
-  @font-face {
-    font-family: 'SimHei';
-    src: url('other_file/Fonts/simhei.ttf'); /* 注意路径分隔符使用/ */
-  }
-  
-  
-</style>
+
 <div style="font-family: 'SimHei', monospace;">
 
 ## Language
