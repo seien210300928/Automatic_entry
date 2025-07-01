@@ -65,7 +65,7 @@ WshShell.SendKeys "{SPACE}"                 ' 空格键
     * `^`：`Ctrl`键
     * `%`：`Alt`键
 
-* 一次性组合键`[Modifiers]...{[Button]}... `
+  * 一次性组合键`[Modifiers]...{[Button]}... `
 <code class="language-vba" style="font-family: monospace"><pre>
 WshShell.SendKeys "^C"                      ' Ctrl+C（复制）
 WshShell.SendKeys "^V"                      ' Ctrl+V（粘贴）
@@ -76,12 +76,10 @@ WshShell.SendKeys "+2"                      ' 输入 "@"（因为按 Shift+2 是
 </pre></code>
 
 
-* 多修饰符+多个普通键`[Modifiers]...({[Button]}...) `
-<pre>
-<code class="language-vba" style="font-family: monospace">
-WshShell.SendKeys "+(abc)"                       ' 输入无大写锁定状态下的"ABC"
-</code>
-</pre>
+  * 多修饰符+多个普通键`[Modifiers]...({[Button]}...) `
+<code class="language-vba" style="font-family: monospace"><pre>
+WshShell.SendKeys "+(abc)"                  ' 输入无大写锁定状态下的"ABC"
+</pre></code>
 
 3. 模拟特殊字符
 * 某些字符因为有关键字的作用所以不能直接输入，所以只能使用`{[Button]}`模拟
