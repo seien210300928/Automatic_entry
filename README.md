@@ -1,8 +1,8 @@
 
 ## Language
-[中文](#中文)
-[English](#english)
-[日本語](#日本語)
+[中文](#中文)  |
+[English to be continued](#english)  |
+[日本語 未完成](#日本語)   |
 
 ---
 ### 中文
