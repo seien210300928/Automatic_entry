@@ -49,20 +49,20 @@ WshShell.SendKeys "{ENTER}"
 1. 单独使用按键{[Button] [times]}
 <pre style="font-family: 'SimHei', monospace;">
 <code class="language-vba" style="font-family: 'SimHei', monospace;">
-WshShell.SendKeys "{ENTER}"                   ' 回车键
-WshShell.SendKeys "{TAB}"                       ' 制表键
-WshShell.SendKeys "{BACKSPACE}"          ' 退格键
-WshShell.SendKeys "{DELETE}"                 ' 删除键
-WshShell.SendKeys "{SPACE}"                   ' 空格键
-WshShell.SendKeys "{ESC}"                       ' ESC键
-WshShell.SendKeys "{UP}"                         ' 上箭头
+WshShell.SendKeys "{ENTER}"                 ' 回车键
+WshShell.SendKeys "{TAB}"                   ' 制表键
+WshShell.SendKeys "{BACKSPACE}"             ' 退格键
+WshShell.SendKeys "{DELETE}"                ' 删除键
+WshShell.SendKeys "{SPACE}"                 ' 空格键
+WshShell.SendKeys "{ESC}"                   ' ESC键
+WshShell.SendKeys "{UP}"                    ' 上箭头
 WshShell.SendKeys "{DOWN}"                  ' 下箭头
-WshShell.SendKeys "{LEFT}"                      ' 左箭头
-WshShell.SendKeys "{RIGHT}"                   ' 右箭头
-WshShell.SendKeys "{F1}"                         ' F1键（F1-F12同理）
-WshShell.SendKeys "{CAPSLOCK}"           ' 切换 Caps Lock 状态
-WshShell.SendKeys "{NUMLOCK}"           ' 切换Num Lock状态
-WshShell.SendKeys "{SPACE}"                  ' 空格键
+WshShell.SendKeys "{LEFT}"                  ' 左箭头
+WshShell.SendKeys "{RIGHT}"                 ' 右箭头
+WshShell.SendKeys "{F1}"                    ' F1键（F1-F12同理）
+WshShell.SendKeys "{CAPSLOCK}"              ' 切换 Caps Lock 状态
+WshShell.SendKeys "{NUMLOCK}"               ' 切换Num Lock状态
+WshShell.SendKeys "{SPACE}"                 ' 空格键
 </code>
 </pre>
 2. 使用组合键`[Modifiers][Modifiers]...{[Button]}... `
