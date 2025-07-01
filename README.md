@@ -47,7 +47,7 @@ WshShell.SendKeys "{ENTER}"
 ```
 各种非语句模拟举例  
 1. 单独使用按键{[Button] [times]}
-<pre style="font-family: 'SimHei', monospace;">
+<pre>
 <code class="language-vba" style="font-family: 'SimHei', monospace;">
 WshShell.SendKeys "{ENTER}"                 ' 回车键
 WshShell.SendKeys "{TAB}"                   ' 制表键
@@ -65,6 +65,7 @@ WshShell.SendKeys "{NUMLOCK}"               ' 切换Num Lock状态
 WshShell.SendKeys "{SPACE}"                 ' 空格键
 </code>
 </pre>
+
 2. 使用组合键`[Modifiers][Modifiers]...{[Button]}... `
 如果是字母按键可将`{[Button]}`直接替换为`[Alphabet]`
 
@@ -74,22 +75,28 @@ WshShell.SendKeys "{SPACE}"                 ' 空格键
     * %：Alt 键
 
 * 一次性组合键`[Modifiers]...{[Button]}... `
-```vba
+<pre>
+<code class="language-vba" style="font-family: 'SimHei', monospace;">
 WshShell.SendKeys "^C"             ' Ctrl+C（复制）
 WshShell.SendKeys "^V"             ' Ctrl+V（粘贴）
 WshShell.SendKeys "%{F4}"         ' Alt+F4（关闭窗口）
 WshShell.SendKeys "+{TAB}"       ' Shift+Tab（反向制表）
 WshShell.SendKeys "^+{ESC}"    ' Ctrl+Shift+ESC（打开任务管理器）
 WshShell.SendKeys "+2"             ' 输入 "@"（因为按 Shift+2 是 @）
-```
+</code>
+</pre>
+
 * 多修饰符+多个普通键`[Modifiers]...({[Button]}...) `
-```vba
+<pre>
+<code class="language-vba" style="font-family: 'SimHei', monospace;">
 WshShell.SendKeys "+(abc)"    ' 输入无大写锁定状态下的"ABC"
-```
+</code>
+</pre>
 
 3. 模拟特殊字符
 * 某些字符因为有关键字的作用所以不能直接输入，所以只能使用`{[Button]}`模拟
-```vba
+<pre>
+<code class="language-vba" style="font-family: 'SimHei', monospace;">
 WshShell.SendKeys "{{}"        ' 输入左花括号 "{"
 WshShell.SendKeys "{}}"        ' 输入右花括号 "}"
 WshShell.SendKeys "{+}"       ' 输入加号 "+"
@@ -98,4 +105,5 @@ WshShell.SendKeys "{%}"       ' 输入百分号 "%"
 WshShell.SendKeys "{~}"       ' 输入波浪号 "~"
 WshShell.SendKeys "\("          ' 输入 "("（部分场景需配合转义）
 WshShell.SendKeys "\)"          ' 输入 ")"（部分场景需配合转义）
-```
+</code>
+</pre>
