@@ -1,5 +1,4 @@
 
-
 ## Language
 [中文](#中文)
 [English](#english)
@@ -93,7 +92,3 @@ WshShell.SendKeys "{~}"                    ' 输入波浪号 "~"
 WshShell.SendKeys "\("                     ' 输入 "("（部分场景需配合转义）
 WshShell.SendKeys "\)"                     ' 输入 ")"（部分场景需配合转义）
 </pre></code>
-
-
-
-
