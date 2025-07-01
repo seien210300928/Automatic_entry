@@ -122,8 +122,8 @@ WshShell.SendKeys "+(abc)"
 3. 单独模拟修饰符`{[Button] [DOWN/UP]}`
 ```vba
 WshShell.SendKeys "{SHIFT DOWN}"        ' 按下 Shift 键（不释放）
-WScript.Sleep 500                                      ' 保持按下状态 0.5 秒
-WshShell.SendKeys "{SHIFT UP}"               ' 释放 Shift 键
+WScript.Sleep 500                       ' 保持按下状态 0.5 秒
+WshShell.SendKeys "{SHIFT UP}"          ' 释放 Shift 键
 ```
 
 4. 模拟特殊字符
