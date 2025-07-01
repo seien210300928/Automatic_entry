@@ -1,3 +1,12 @@
+<style>
+  @font-face {
+    font-family: 'SimHei';
+    src: url('other_file/Fonts/simhei.ttf'); /* 注意路径分隔符使用/ */
+  }
+  
+  
+</style>
+
 ## Language
 [中文](#中文)
 [English](#english)
@@ -38,7 +47,7 @@ WshShell.SendKeys "{ENTER}"
 ```
 各种非语句模拟举例  
 1. 单独使用按键{[Button] [times]}
-<pre style="font-family: 等线, SimHei, monospace;">
+<pre style="font-family: 'SimHei', monospace;">
 WshShell.SendKeys "{ENTER}"                   ' 回车键
 WshShell.SendKeys "{TAB}"                       ' 制表键
 WshShell.SendKeys "{BACKSPACE}"          ' 退格键
